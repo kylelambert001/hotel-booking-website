@@ -1,0 +1,35 @@
+hotel booking features
+
+- search for hotels by location (city), checkin - checkout dates
+
+*** HOTEL SEARCH PAGE ***
+user can search for hotels via location (city)
+form inputs
+  - search field
+  - num of people
+  - dates of stay (checkin - checkout) optional
+
+dynamically loaded hotel card details
+  - name
+  - location (suburb)
+  - rating (out of 5)
+  - price rance eg. $168-$246 per/night
+  - price level ($, $$, $$$)
+  - images
+
+
+*** HOTEL DETAILS PAGE ***
+hotel details
+  - name
+  - phone, email, website
+  - address
+  - description
+  - rating (out of 5)
+  - images
+  - amenities
+  - awards (optional)
+
+user reviews
+ - number of reviews
+ - reviews histogram eg. number of reviews for each star
+ - display 5 user reviews
