@@ -5,7 +5,7 @@ hotel booking features
 *** HOTEL SEARCH PAGE ***
 user can search for hotels via location (city)
 form inputs
-  - search field
+  - search field (change bg image to image of location - real-time)
   - num of people
   - dates of stay (checkin - checkout) optional
 

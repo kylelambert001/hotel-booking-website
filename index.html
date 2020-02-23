@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotels.com</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script type="module" src="js/index.js" defer></script>
+</head>
+
+<body class="body">
+  <header class="header">
+    <div class="topbar">
+      <a href="/" class="brand-link">
+        <img src="/icons/brand-logo.svg" alt="Hotels.com logo" class="brand-logo">
+      </a>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <l1 class="nav__item">
+            <a href="/" class="nav__link">Accommodation</a>
+          </l1>
+          <l1 class="nav__item">
+            <a href="/" class="nav__link">Contact Us</a>
+          </l1>
+        </ul>
+      </nav>
+    </div>
+
+    <form action="#" class="form">
+      <input type="text" class="form__input" data-search-input placeholder="Search by location...">
+
+      <div class="date-picker">
+        <div class="date-picker__icon-wrapper">
+          <img src="/icons/calendar-regular.svg" alt="Calander icon" class="date-picker__icon">
+        </div>
+        <div class="date-picker__date" data-check-in></div>
+      </div>
+
+      <div class="date-picker">
+        <div class="date-picker__icon-wrapper">
+          <img src="/icons/calendar-regular.svg" alt="Calander icon" class="date-picker__icon">
+        </div>
+        <div class="date-picker__date" data-check-out>16/09/2020</div>
+      </div>
+
+      <div class="guest" data-guest>
+        <div class="guest__icon-wrapper">
+          <img src="/icons/user-regular.svg" alt="User icon" class="guest__icon">
+        </div>
+
+        <div class="guest__wrapper">
+          <div class="guest__adult" data-adult-count></div>
+          <div class="guest__child" data-child-count></div>
+        </div>
+
+        <div class="guest__icon-wrapper">
+          <img src="/icons/angle-down-solid.svg" alt="Arrow down" class="guest__icon">
+        </div>
+
+        <div class="dropdown" data-guest-dropdown>
+          <div class="dropdown__item">
+            <p class="dropdown__key">Adults</p>
+            <div class="dropdown__stepper">
+              <button class="btn btn--guest" data-adult-decrement>
+                <img src="/icons/minus-solid.svg" alt="Minus icon" class="dropdown__icon">
+              </button>
+              <span class="dropdown__stepper-value" data-stepper-adult-count></span>
+              <button class="btn btn--guest" data-adult-increment>
+                <img src="/icons/plus-solid.svg" alt="Plus icon" class="dropdown__icon">
+              </button>
+            </div>
+          </div>
+
+          <div class="dropdown__item">
+            <p class="dropdown__key">Children</p>
+            <div class="dropdown__stepper">
+              <button class="btn btn--guest" data-child-decrement>
+                <img src="/icons/minus-solid.svg" alt="Minus icon" class="dropdown__icon">
+              </button>
+              <span class="dropdown__stepper-value" data-stepper-child-count></span>
+              <button class="btn btn--guest" data-child-increment>
+                <img src="/icons/plus-solid.svg" alt="Plus icon" class="dropdown__icon">
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <button class="btn btn--search" data-button="search">Search</button> -->
+    </form>
+  </header>
+
+  <main class="main"></main>
+
+
+</body>
+
+</html>
