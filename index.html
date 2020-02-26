@@ -29,45 +29,45 @@
     </div>
 
     <form action="#" class="form">
-      <input type="text" class="form__input" data-search-input placeholder="Search by location...">
+      <input type="text" class="form__input" data-js="form-input" placeholder="Search by location...">
 
       <div class="date-picker">
         <div class="date-picker__icon-wrapper">
           <img src="/icons/calendar-regular.svg" alt="Calander icon" class="date-picker__icon">
         </div>
-        <div class="date-picker__date" data-check-in></div>
+        <div class="date-picker__date" data-js="date-picker-checkin">16/09/2020</div>
       </div>
 
       <div class="date-picker">
         <div class="date-picker__icon-wrapper">
           <img src="/icons/calendar-regular.svg" alt="Calander icon" class="date-picker__icon">
         </div>
-        <div class="date-picker__date" data-check-out>16/09/2020</div>
+        <div class="date-picker__date" data-js="date-picker-checkout">16/09/2020</div>
       </div>
 
-      <div class="guest" data-guest>
+      <div class="guest" data-js="guest">
         <div class="guest__icon-wrapper">
           <img src="/icons/user-regular.svg" alt="User icon" class="guest__icon">
         </div>
 
         <div class="guest__wrapper">
-          <div class="guest__adult" data-adult-count></div>
-          <div class="guest__child" data-child-count></div>
+          <div class="guest__adult" data-js="guest-count-adult"></div>
+          <div class="guest__child" data-js="guest-count-child"></div>
         </div>
 
         <div class="guest__icon-wrapper">
           <img src="/icons/angle-down-solid.svg" alt="Arrow down" class="guest__icon">
         </div>
 
-        <div class="dropdown" data-guest-dropdown>
+        <div class="dropdown" data-js="guest-dropdown">
           <div class="dropdown__item">
             <p class="dropdown__key">Adults</p>
             <div class="dropdown__stepper">
-              <button class="btn btn--guest" data-adult-decrement>
+              <button class="btn btn--guest" data-js="dropdown-button" value="minus-adult">
                 <img src="/icons/minus-solid.svg" alt="Minus icon" class="dropdown__icon">
               </button>
-              <span class="dropdown__stepper-value" data-stepper-adult-count></span>
-              <button class="btn btn--guest" data-adult-increment>
+              <span class="dropdown__stepper-value" data-js="dropdown-count-adult"></span>
+              <button class="btn btn--guest" data-js="dropdown-button" value="add-adult">
                 <img src="/icons/plus-solid.svg" alt="Plus icon" class="dropdown__icon">
               </button>
             </div>
@@ -76,15 +76,17 @@
           <div class="dropdown__item">
             <p class="dropdown__key">Children</p>
             <div class="dropdown__stepper">
-              <button class="btn btn--guest" data-child-decrement>
+              <button class="btn btn--guest" data-js="dropdown-button" value="minus-child">
                 <img src="/icons/minus-solid.svg" alt="Minus icon" class="dropdown__icon">
               </button>
-              <span class="dropdown__stepper-value" data-stepper-child-count></span>
-              <button class="btn btn--guest" data-child-increment>
+              <span class="dropdown__stepper-value" data-js="dropdown-count-child"></span>
+              <button class="btn btn--guest" data-js="dropdown-button" value="add-child">
                 <img src="/icons/plus-solid.svg" alt="Plus icon" class="dropdown__icon">
               </button>
             </div>
           </div>
+
+
         </div>
       </div>
 

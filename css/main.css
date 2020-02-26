@@ -272,13 +272,9 @@ a {
 }
 
 .dropdown--active {
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
   opacity: 1;
-  -webkit-transition: opacity 100ms ease-in, -webkit-transform;
-  transition: opacity 100ms ease-in, -webkit-transform;
-  transition: transform, opacity 100ms ease-in;
-  transition: transform, opacity 100ms ease-in, -webkit-transform;
 }
 
 .dropdown__item {
