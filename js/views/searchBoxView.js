@@ -2,11 +2,15 @@ import {
   elements
 } from './base.js';
 
-export const displayCount = (adult, child) => {
+export const displayGuests = (adult, child) => {
   elements.guestCountAdult.textContent = `${adult} ${adult === 1 ? 'adult' : 'adults'}`;
   elements.guestCountChild.textContent = `${child} ${child === 1 ? 'child' : 'children'}`;
   elements.dropdownCountAdult.textContent = adult;
   elements.dropdownCountChild.textContent = child;
+}
+
+export const displayArrivalDate = date => {
+  elements.arrivalDate.textContent = date;
 }
 
 export const toggleDropdown = state => {
